@@ -10,6 +10,7 @@ namespace CodeWars
     [TestFixture]
     public class StringHandling
     {
+
         public static string RemoveCharsFromStringWithBuilder(string value, char toRemove)
         {
             if (value.IndexOf(toRemove) >= 0)
@@ -61,7 +62,7 @@ namespace CodeWars
                 value = value.Replace(toRemove, string.Empty.First());
             }
             return value;
-        }
+        }       
 
         [TestCase('A', null, 'o', "")]
         [TestCase('B', "", 'o', "")]
@@ -96,5 +97,7 @@ namespace CodeWars
         {
             Assert.AreEqual(expected, RemoveCharsFromStringCorrected(value, toRemove));
         }
+
+
     }
 }
