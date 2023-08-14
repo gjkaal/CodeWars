@@ -2,7 +2,6 @@
 using BenchmarkDotNet.Jobs;
 
 namespace BenchMarkConsole;
-
 //[SimpleJob(RuntimeMoniker.Net472)]
 [SimpleJob(RuntimeMoniker.Net60)]
 //[SimpleJob(RuntimeMoniker.Net70)]

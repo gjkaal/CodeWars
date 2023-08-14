@@ -16,7 +16,7 @@ namespace BenchMarkConsole
                 // do something with arguments
             }
 
-            _ = BenchmarkRunner.Run<ListsBenchmark>();
+            _ = BenchmarkRunner.Run<StringReplaceBenchmarks>();
         }
     }
 }
