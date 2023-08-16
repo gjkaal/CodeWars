@@ -59,9 +59,7 @@ public class ListsBenchmark
         var item = items.ToElementList();
         return item.Count;
     }
-
 }
-
 
 //[SimpleJob(RuntimeMoniker.Net472)]
 [SimpleJob(RuntimeMoniker.Net60)]
@@ -92,5 +90,4 @@ public class FindExtensionBenchmark
         var ext = GetExtensionWithSubstring("filenaam.with.several.items.txt");
         return ext.CompareTo("txt") == 0;
     }
-
 }

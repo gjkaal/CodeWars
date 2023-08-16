@@ -34,7 +34,6 @@ public class StringHandlingTests
     }
 }
 
-
 [TestClass]
 public class FileSystemServicesTests
 {

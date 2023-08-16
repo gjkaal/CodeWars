@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBackGroundServices", "MyB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MsTestCodeWars", "MsTestCodeWars\MsTestCodeWars.csproj", "{E9A376FD-17AB-4E84-AAF1-0E30E24FE6F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreElements", "CoreElements\CoreElements.csproj", "{9C0E1B24-F320-4CB7-B9A0-343C1832F917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreElements", "CoreElements\CoreElements.csproj", "{9C0E1B24-F320-4CB7-B9A0-343C1832F917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreElements.UnitTests", "CoreElements.UnitTests\CoreElements.UnitTests.csproj", "{4D0ED890-85B5-4079-B3CA-9285E022901E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreElements.UnitTests", "CoreElements.UnitTests\CoreElements.UnitTests.csproj", "{4D0ED890-85B5-4079-B3CA-9285E022901E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Middleware", "Middleware\Middleware.csproj", "{55A9CF0C-93A1-46C1-9D55-E36173298A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{4D0ED890-85B5-4079-B3CA-9285E022901E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D0ED890-85B5-4079-B3CA-9285E022901E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D0ED890-85B5-4079-B3CA-9285E022901E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A9CF0C-93A1-46C1-9D55-E36173298A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A9CF0C-93A1-46C1-9D55-E36173298A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A9CF0C-93A1-46C1-9D55-E36173298A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A9CF0C-93A1-46C1-9D55-E36173298A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

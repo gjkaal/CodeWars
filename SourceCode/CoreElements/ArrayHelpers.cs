@@ -11,5 +11,4 @@ public static class ArrayHelpers
     {
         return value.Items;
     }
-
 }

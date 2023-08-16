@@ -84,9 +84,7 @@ namespace CodeWars
             }
             return value;
         }
-
     }
-
 
     [TestFixture]
     public class StringHandlingTests
@@ -116,7 +114,5 @@ namespace CodeWars
         {
             Assert.AreEqual(expected, StringHandling.RemoveCharsFromStringCorrected(value, toRemove));
         }
-
-
     }
 }
