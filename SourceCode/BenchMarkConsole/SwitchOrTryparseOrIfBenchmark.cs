@@ -23,17 +23,16 @@ public class SwitchOrTryparseOrIfBenchmark
         "D"
     };
 
-    // 450ns 
+    // 450ns
     public void UseTryparseBenchmark()
     {
-        foreach(var s in Values)
+        foreach (var s in Values)
         {
             _ = UseTryParse(s);
         }
     }
 
     [Benchmark]
-    // 70ns
     public void UseSwitchBenchmark()
     {
         foreach (var s in Values)
@@ -43,7 +42,6 @@ public class SwitchOrTryparseOrIfBenchmark
     }
 
     [Benchmark]
-    // 15 ns
     public void UseSwitchOptimizedBenchmark()
     {
         foreach (var s in Values)
@@ -63,14 +61,15 @@ public class SwitchOrTryparseOrIfBenchmark
 
     private BenchmarkEnum UseTryParse(string value)
     {
-        return (Enum.TryParse<BenchmarkEnum>(value, true, out var result))
+        return Enum.TryParse<BenchmarkEnum>(value, true, out var result)
             ? result
             : BenchmarkEnum.None;
     }
 
     private BenchmarkEnum UseSwitch(string value)
     {
-        switch(value.ToUpperInvariant()) {
+        switch (value.ToUpperInvariant())
+        {
             case "E": return BenchmarkEnum.E;
             case "B": return BenchmarkEnum.B;
             case "D": return BenchmarkEnum.D;
@@ -85,12 +84,15 @@ public class SwitchOrTryparseOrIfBenchmark
             case 'E':
             case 'e':
                 return BenchmarkEnum.E;
+
             case 'B':
             case 'b':
                 return BenchmarkEnum.B;
+
             case 'D':
             case 'd':
                 return BenchmarkEnum.D;
+
             default: return BenchmarkEnum.None;
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography;
+using BenchMarkConsole.EnumToEnumConversion;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
@@ -16,7 +17,7 @@ namespace BenchMarkConsole
                 // do something with arguments
             }
 
-            _ = BenchmarkRunner.Run<StringReplaceBenchmarks>();
+            _ = BenchmarkRunner.Run<EnumToEnumConversionBenchmark>();
         }
     }
 }
